@@ -38,6 +38,7 @@ Zoek op `LET OP` in `build.py`:
 ## Assets
 - `assets/img/logo-groei-*` — hoofdlogo (kleur / grijs / wit, web-versies)
 - `assets/img/hero-illustratie.png` — kiemplant met vliegertje (hero)
+- `assets/img/foto-handen.jpg` — AI-gegenereerde hero-foto: handen van verschillende huidskleuren vormen samen een cirkel (verbinding tussen de 12 scholen)
 - `assets/img/foto-gemeenschap.jpg` — AI-gegenereerd sfeerbeeld (kinderen + leerkrachten); geen echte leerlingen, dus geen portretrecht/AVG-toestemming nodig
 - `assets/img/favicon.png` — kiemplant uit het logo
 - `assets/img/puzzel*.png` — puzzelvisual (nog niet gebruikt; schoolnamen worden

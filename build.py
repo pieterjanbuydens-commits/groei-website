@@ -211,8 +211,14 @@ HOME = """
     </div>
     <div class="relative">
       <div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-      <img src="assets/img/hero-illustratie.png" alt="Een groeiende kiemplant met een rood papieren vliegertje"
-           class="relative z-10 w-full max-w-xl mx-auto h-auto rounded-3xl animate-float"/>
+      <div class="absolute -bottom-10 -left-8 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
+      <img src="assets/img/foto-handen.jpg"
+           alt="Handen van verschillende huidskleuren vormen samen een cirkel als symbool van verbinding"
+           class="relative z-10 w-full max-w-xl mx-auto h-auto rounded-3xl shadow-2xl shadow-primary/20 object-cover"/>
+      <div class="absolute z-20 -bottom-4 right-4 sm:right-10 glass-card px-5 py-3 rounded-2xl shadow-lg flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">diversity_3</span>
+        <span class="font-headline font-bold text-dark text-sm leading-tight">12 scholen<br/>1 gemeenschap</span>
+      </div>
     </div>
   </div>
 </section>
@@ -256,11 +262,12 @@ HOME = """
 <!-- Samen één geheel -->
 <section class="py-24 bg-surface/60 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-    <div class="order-2 lg:order-1">
-      <div class="bg-white rounded-3xl p-8 shadow-sm puzzle-glow">
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          __PUZZELSTUKKEN__
-        </div>
+    <div class="order-2 lg:order-1 relative">
+      <div class="absolute -top-8 -left-8 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
+      <div class="bg-white rounded-3xl p-6 shadow-sm puzzle-glow relative z-10">
+        <img src="assets/img/hero-illustratie.png"
+             alt="Een groeiende kiemplant met een rood papieren vliegertje"
+             class="w-full max-w-md mx-auto h-auto animate-float"/>
       </div>
     </div>
     <div class="order-1 lg:order-2 space-y-7">
@@ -314,23 +321,6 @@ HOME = """
 </section>
 """
 
-PUZZEL_SCHOLEN = ["Bengel", "Boskesschool", "De Palster", "Dol-Fijn", "Duizendvoet",
-                  "Groei", "Heiende", "OLVC", "Oudenbos", "SLC", "Veertjesplein", "De Vinderij"]
-
-
-def home_puzzelstukken():
-    out = []
-    for i, naam in enumerate(PUZZEL_SCHOLEN):
-        mid = (naam == "Groei")
-        base = "bg-primary text-white" if mid else (
-            "bg-surface-light text-dark" if i % 2 else "bg-primary/15 text-dark")
-        out.append(
-            f'<div class="aspect-square rounded-2xl {base} flex items-center justify-center '
-            f'text-center text-sm font-headline font-bold p-2 hover:scale-105 transition-transform">{naam}</div>'
-        )
-    return "\n          ".join(out)
-
-
 def home_punten():
     punten = [
         "Een gedeelde visie op kwaliteitsvol onderwijs",
@@ -369,8 +359,7 @@ def home_waarden():
 
 
 def build_home():
-    c = HOME.replace("__PUZZELSTUKKEN__", home_puzzelstukken())
-    c = c.replace("__PUNTEN__", home_punten())
+    c = HOME.replace("__PUNTEN__", home_punten())
     c = c.replace("__WAARDEN__", home_waarden())
     return shell(
         "Scholengemeenschap Groei | Samen laten we kinderen groeien",
