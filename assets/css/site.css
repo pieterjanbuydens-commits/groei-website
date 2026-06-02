@@ -1,0 +1,52 @@
+/* Scholengemeenschap Groei — gedeelde stijlen
+   Kleuren: groen #95C11E, rood #E30413, grijs #9D9FA2 (huisstijl) */
+
+:root {
+  --groen: #95C11E;
+  --rood: #E30413;
+  --grijs: #9D9FA2;
+  --donker: #1F2421;
+  --surface: #F4F8E9;
+  --surface-light: #E8F1D2;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito Sans', sans-serif; color: var(--donker); }
+.font-headline { font-family: 'Quicksand', sans-serif; }
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Zachte organische achtergrond voor hero/secties */
+.blob-bg {
+  background-image:
+    radial-gradient(circle at 18% 28%, rgba(149, 193, 30, 0.10) 0%, transparent 42%),
+    radial-gradient(circle at 82% 72%, rgba(149, 193, 30, 0.06) 0%, transparent 42%),
+    radial-gradient(circle at 75% 12%, rgba(227, 4, 19, 0.04) 0%, transparent 30%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.puzzle-glow { filter: drop-shadow(0 10px 30px rgba(149, 193, 30, 0.18)); }
+
+/* Zwevende hero-illustratie */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Navbar overgang bij scrollen (klassen via JS toegevoegd) */
+nav.site-nav { transition: background-color .3s ease, box-shadow .3s ease; }

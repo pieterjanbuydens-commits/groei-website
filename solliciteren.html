@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Solliciteren | Scholengemeenschap Groei</title>
+<meta name="description" content="Solliciteer bij Scholengemeenschap Groei in het gewoon of buitengewoon basisonderwijs."/>
+<link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@300;400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#95C11E', secondary: '#E30413', neutral: '#9D9FA2',
+            dark: '#1F2421', surface: '#F4F8E9', 'surface-light': '#E8F1D2'
+          },
+          borderRadius: { 'xl': '1.5rem', '2xl': '2rem', '3xl': '2.5rem' },
+          fontFamily: {
+            headline: ['Quicksand', 'sans-serif'],
+            body: ['Nunito Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+</script>
+<link rel="stylesheet" href="assets/css/site.css"/>
+</head>
+<body class="bg-white selection:bg-primary/30 antialiased">
+
+<nav class="site-nav fixed top-0 w-full z-50 bg-transparent backdrop-blur-md">
+  <div class="flex justify-between items-center w-full px-6 md:px-8 py-3 max-w-7xl mx-auto">
+    <a href="index.html" class="flex items-center gap-2 shrink-0">
+      <img src="assets/img/logo-groei-kleur-web.png" alt="Scholengemeenschap Groei"
+           class="h-9 md:h-11 w-auto hover:scale-105 transition-transform duration-300"/>
+    </a>
+    <div class="hidden lg:flex items-center gap-7">
+      <a class="text-dark font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="scholen.html">Onze scholen</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="scholengemeenschap.html">Scholengemeenschap</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="samenwerking.html">Samenwerking</a>
+<a class="text-primary font-bold border-b-4 border-primary pb-1" href="solliciteren.html">Solliciteren</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+    </div>
+    <div class="hidden lg:block">
+      <a href="solliciteren.html"
+         class="bg-primary text-white px-6 py-2.5 rounded-full font-bold hover:scale-105 hover:shadow-lg active:scale-95 transition-all duration-300">
+        Solliciteer
+      </a>
+    </div>
+    <button id="menu-toggle" aria-label="Menu" aria-expanded="false"
+            class="lg:hidden text-dark p-2">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-md shadow-lg mx-4 mb-2 rounded-2xl p-2">
+    <a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="index.html">Home</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="scholen.html">Onze scholen</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="scholengemeenschap.html">Scholengemeenschap</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="samenwerking.html">Samenwerking</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="solliciteren.html">Solliciteren</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="contact.html">Contact</a>
+    <a href="solliciteren.html" class="block text-center mt-2 bg-primary text-white px-4 py-3 rounded-xl font-bold">Solliciteer</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="blob-bg pt-36 pb-16">
+  <div class="max-w-4xl mx-auto px-6 md:px-8 text-center space-y-5">
+    <span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm text-primary font-bold text-sm">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+      Solliciteren
+    </span>
+    <h1 class="text-4xl md:text-5xl font-headline font-bold text-dark leading-tight">Kom <span class="text-primary">groeien</span> bij ons team</h1>
+    <p class="text-lg md:text-xl text-neutral leading-relaxed max-w-2xl mx-auto">Zin om je talenten in te zetten in een warme onderwijsgemeenschap? We horen graag van je.</p>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="p-8 rounded-3xl bg-surface/70 flex flex-col">
+        <span class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">edit_document</span>
+        </span>
+        <h2 class="text-2xl font-headline font-bold text-dark mb-3">Gewoon basisonderwijs</h2>
+        <p class="text-neutral leading-relaxed mb-6 grow">
+          Solliciteer je voor een functie in het gewoon basisonderwijs? Vul het sollicitatieformulier in.
+          Je gegevens komen in een lijst die onze directies raadplegen wanneer ze nieuwe medewerkers zoeken.
+        </p>
+        <!-- LET OP: vervang href door de URL van het Google-sollicitatieformulier -->
+        <a href="#" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-4 rounded-2xl font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-all">
+          Naar het sollicitatieformulier <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="p-8 rounded-3xl border border-surface-light flex flex-col">
+        <span class="w-14 h-14 rounded-2xl bg-surface flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">alternate_email</span>
+        </span>
+        <h2 class="text-2xl font-headline font-bold text-dark mb-3">Buitengewoon basisonderwijs</h2>
+        <p class="text-neutral leading-relaxed mb-6 grow">
+          Voor een functie in het buitengewoon basisonderwijs (De Vinderij) stuur je een e-mail met je
+          gegevens en motivatie.
+        </p>
+        <a href="mailto:info@devinderij.be" class="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-7 py-4 rounded-2xl font-bold hover:bg-primary/5 transition-all">
+          info@devinderij.be
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-dark text-white rounded-t-[2rem] mt-16">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 px-8 py-14 max-w-7xl mx-auto">
+    <div class="space-y-5">
+      <img src="assets/img/logo-groei-wit-web.png" alt="Groei" class="h-11 w-auto"/>
+      <p class="text-white/70 text-sm leading-relaxed">
+        Heirbrugstraat 271<br/>9160 Lokeren<br/>
+        <a class="hover:text-primary" href="tel:+3293481300">09 348 13 00</a>
+      </p>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-headline font-bold text-primary text-lg">Snelle links</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a class="text-white/70 hover:text-white transition-colors" href="scholen.html">Onze scholen</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="scholengemeenschap.html">Scholengemeenschap</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="samenwerking.html">Samenwerking</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="solliciteren.html">Solliciteren</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-headline font-bold text-primary text-lg">Schoolbesturen</h4>
+      <ul class="space-y-2.5 text-sm text-white/70">
+        <li>vzw Katholiek Basisonderwijs Lokeren en Moerbeke-Waas</li>
+        <li>vzw Zorg en onderwijs De Hagewinde</li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-headline font-bold text-primary text-lg">Info</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a class="text-white/70 hover:text-white transition-colors" href="contact.html">Privacybeleid</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="contact.html">Contactformulier</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 px-8 py-6 max-w-7xl mx-auto text-center">
+    <p class="text-white/40 text-xs">© 2026 Scholengemeenschap Groei — Lokeren &amp; Moerbeke-Waas.</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

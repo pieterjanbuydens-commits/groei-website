@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Scholengemeenschap | Groei</title>
+<meta name="description" content="Visie, werking en bestuur van Scholengemeenschap Groei."/>
+<link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@300;400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#95C11E', secondary: '#E30413', neutral: '#9D9FA2',
+            dark: '#1F2421', surface: '#F4F8E9', 'surface-light': '#E8F1D2'
+          },
+          borderRadius: { 'xl': '1.5rem', '2xl': '2rem', '3xl': '2.5rem' },
+          fontFamily: {
+            headline: ['Quicksand', 'sans-serif'],
+            body: ['Nunito Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+</script>
+<link rel="stylesheet" href="assets/css/site.css"/>
+</head>
+<body class="bg-white selection:bg-primary/30 antialiased">
+
+<nav class="site-nav fixed top-0 w-full z-50 bg-transparent backdrop-blur-md">
+  <div class="flex justify-between items-center w-full px-6 md:px-8 py-3 max-w-7xl mx-auto">
+    <a href="index.html" class="flex items-center gap-2 shrink-0">
+      <img src="assets/img/logo-groei-kleur-web.png" alt="Scholengemeenschap Groei"
+           class="h-9 md:h-11 w-auto hover:scale-105 transition-transform duration-300"/>
+    </a>
+    <div class="hidden lg:flex items-center gap-7">
+      <a class="text-dark font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="scholen.html">Onze scholen</a>
+<a class="text-primary font-bold border-b-4 border-primary pb-1" href="scholengemeenschap.html">Scholengemeenschap</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="samenwerking.html">Samenwerking</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="solliciteren.html">Solliciteren</a>
+<a class="text-dark font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+    </div>
+    <div class="hidden lg:block">
+      <a href="solliciteren.html"
+         class="bg-primary text-white px-6 py-2.5 rounded-full font-bold hover:scale-105 hover:shadow-lg active:scale-95 transition-all duration-300">
+        Solliciteer
+      </a>
+    </div>
+    <button id="menu-toggle" aria-label="Menu" aria-expanded="false"
+            class="lg:hidden text-dark p-2">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-md shadow-lg mx-4 mb-2 rounded-2xl p-2">
+    <a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="index.html">Home</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="scholen.html">Onze scholen</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="scholengemeenschap.html">Scholengemeenschap</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="samenwerking.html">Samenwerking</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="solliciteren.html">Solliciteren</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-surface font-medium text-dark" href="contact.html">Contact</a>
+    <a href="solliciteren.html" class="block text-center mt-2 bg-primary text-white px-4 py-3 rounded-xl font-bold">Solliciteer</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="blob-bg pt-36 pb-16">
+  <div class="max-w-4xl mx-auto px-6 md:px-8 text-center space-y-5">
+    <span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm text-primary font-bold text-sm">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+      Scholengemeenschap
+    </span>
+    <h1 class="text-4xl md:text-5xl font-headline font-bold text-dark leading-tight">Samen werken aan <span class="text-primary">goed onderwijs</span></h1>
+    <p class="text-lg md:text-xl text-neutral leading-relaxed max-w-2xl mx-auto">Scholengemeenschap Groei bundelt diensten en overleg in een centraal secretariaat, zodat onze scholen zich kunnen toeleggen op wat echt telt: de kinderen.</p>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6 md:px-8 space-y-12">
+
+    <div class="prose-lg space-y-5">
+      <h2 class="text-2xl md:text-3xl font-headline font-bold text-dark">Onze visie</h2>
+      <p class="text-lg text-neutral leading-relaxed">
+        We streven naar een gastvrije school waar kinderen graag komen. Een plek met respect voor
+        ieders overtuiging, waar leren en samenleven hand in hand gaan en waar elk kind en elk
+        personeelslid zijn talenten kan ontplooien.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl md:text-3xl font-headline font-bold text-dark mb-6">Onze werking</h2>
+      <p class="text-lg text-neutral leading-relaxed mb-6">
+        De scholengemeenschap bundelt diensten in een centraal secretariaat. Daarnaast komen
+        verschillende overleggroepen regelmatig samen rond directies, administratief personeel, zorgcoördinatoren, leerkrachten bewegingsopvoeding, ICT, GOBO, CPBW, LOC/OCSG.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+    <div class="p-8 rounded-3xl bg-white border border-surface-light">
+      <h3 class="text-xl font-headline font-bold text-dark mb-4">Gewoon basisonderwijs</h3>
+      <ul class="space-y-2 list-disc list-inside marker:text-primary"><li class="text-neutral leading-relaxed">Bengel</li><li class="text-neutral leading-relaxed">Boskesschool</li><li class="text-neutral leading-relaxed">De Palster</li><li class="text-neutral leading-relaxed">Dol-Fijn</li><li class="text-neutral leading-relaxed">Duizendvoet</li><li class="text-neutral leading-relaxed">Heiende</li><li class="text-neutral leading-relaxed">Onze-Lieve-Vrouwcollege</li><li class="text-neutral leading-relaxed">Oudenbos</li><li class="text-neutral leading-relaxed">Sint-Lodewijkscollege (Doorslaar)</li><li class="text-neutral leading-relaxed">Veertjesplein</li></ul>
+    </div>
+        
+    <div class="p-8 rounded-3xl bg-white border border-surface-light">
+      <h3 class="text-xl font-headline font-bold text-dark mb-4">Buitengewoon basisonderwijs</h3>
+      <ul class="space-y-2 list-disc list-inside marker:text-primary"><li class="text-neutral leading-relaxed">De Vinderij 1 — type 3 en 9</li><li class="text-neutral leading-relaxed">De Vinderij 2 — type basisaanbod, 1 en 2</li></ul>
+    </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-2xl md:text-3xl font-headline font-bold text-dark mb-6">Bestuur</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+    <div class="p-8 rounded-3xl bg-white border border-surface-light">
+      <h3 class="text-xl font-headline font-bold text-dark mb-4">vzw Katholiek Basisonderwijs Lokeren en Moerbeke-Waas</h3>
+      <ul class="space-y-2 list-disc list-inside marker:text-primary"><li class="text-neutral leading-relaxed">Heirbrugstraat 271, 9160 Lokeren</li><li class="text-neutral leading-relaxed">Bestuurt de scholen gewoon basisonderwijs binnen de scholengemeenschap.</li></ul>
+    </div>
+        
+    <div class="p-8 rounded-3xl bg-white border border-surface-light">
+      <h3 class="text-xl font-headline font-bold text-dark mb-4">vzw Zorg en onderwijs De Hagewinde</h3>
+      <ul class="space-y-2 list-disc list-inside marker:text-primary"><li class="text-neutral leading-relaxed">Poststraat 6, 9160 Lokeren</li><li class="text-neutral leading-relaxed">Bestuurt het buitengewoon basisonderwijs (De Vinderij).</li></ul>
+    </div>
+      </div>
+      <p class="text-neutral mt-6">
+        De dagelijkse coördinatie van de scholengemeenschap is in handen van de coördinerend directeur,
+        ondersteund door het centraal secretariaat.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-dark text-white rounded-t-[2rem] mt-16">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 px-8 py-14 max-w-7xl mx-auto">
+    <div class="space-y-5">
+      <img src="assets/img/logo-groei-wit-web.png" alt="Groei" class="h-11 w-auto"/>
+      <p class="text-white/70 text-sm leading-relaxed">
+        Heirbrugstraat 271<br/>9160 Lokeren<br/>
+        <a class="hover:text-primary" href="tel:+3293481300">09 348 13 00</a>
+      </p>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-headline font-bold text-primary text-lg">Snelle links</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a class="text-white/70 hover:text-white transition-colors" href="scholen.html">Onze scholen</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="scholengemeenschap.html">Scholengemeenschap</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="samenwerking.html">Samenwerking</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="solliciteren.html">Solliciteren</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-headline font-bold text-primary text-lg">Schoolbesturen</h4>
+      <ul class="space-y-2.5 text-sm text-white/70">
+        <li>vzw Katholiek Basisonderwijs Lokeren en Moerbeke-Waas</li>
+        <li>vzw Zorg en onderwijs De Hagewinde</li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-headline font-bold text-primary text-lg">Info</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a class="text-white/70 hover:text-white transition-colors" href="contact.html">Privacybeleid</a></li>
+        <li><a class="text-white/70 hover:text-white transition-colors" href="contact.html">Contactformulier</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 px-8 py-6 max-w-7xl mx-auto text-center">
+    <p class="text-white/40 text-xs">© 2026 Scholengemeenschap Groei — Lokeren &amp; Moerbeke-Waas.</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
