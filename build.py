@@ -218,17 +218,38 @@ HOME = """
 </section>
 
 <!-- Wie zijn wij -->
-<section class="py-24 bg-white">
-  <div class="max-w-4xl mx-auto px-6 md:px-8 text-center space-y-8">
-    <h2 class="text-3xl md:text-4xl font-headline font-bold text-dark">Wie zijn wij?</h2>
-    <div class="w-20 h-1.5 bg-secondary mx-auto rounded-full"></div>
-    <p class="text-xl text-neutral leading-relaxed">
-      Scholengemeenschap Groei is een samenwerkingsverband van twaalf katholieke basisscholen in
-      Lokeren en Moerbeke-Waas: tien scholen gewoon basisonderwijs en twee scholen buitengewoon
-      basisonderwijs. Door duidelijke afspraken te maken en expertise te delen, versterken we elkaar,
-      met respect voor de eigenheid van elke school. Zo maken we van elke school een warme plek waar
-      kinderen en personeelsleden hun talenten kunnen ontplooien.
-    </p>
+<section class="py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="relative">
+      <div class="absolute -top-8 -left-8 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-10 -right-6 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+      <img src="assets/img/foto-gemeenschap.jpg"
+           alt="Lachende kinderen en leerkrachten samen op de speelplaats"
+           class="relative z-10 w-full h-auto rounded-3xl shadow-xl shadow-primary/10 object-cover"/>
+      <div class="absolute z-20 -bottom-5 left-6 glass-card px-5 py-3 rounded-2xl shadow-lg flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">groups</span>
+        <span class="font-headline font-bold text-dark text-sm leading-tight">Een warme plek<br/>voor elk kind</span>
+      </div>
+    </div>
+    <div class="space-y-6">
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-surface rounded-full text-primary font-bold text-sm">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">favorite</span>
+        Wie zijn wij?
+      </span>
+      <h2 class="text-3xl md:text-4xl font-headline font-bold text-dark leading-tight">
+        Een netwerk van scholen met <span class="text-primary">hart voor kinderen</span>
+      </h2>
+      <p class="text-lg text-neutral leading-relaxed">
+        Scholengemeenschap Groei is een samenwerkingsverband van twaalf katholieke basisscholen in
+        Lokeren en Moerbeke-Waas: tien scholen gewoon basisonderwijs en twee scholen buitengewoon
+        basisonderwijs.
+      </p>
+      <p class="text-lg text-neutral leading-relaxed">
+        Door duidelijke afspraken te maken en expertise te delen, versterken we elkaar, met respect
+        voor de eigenheid van elke school. Zo maken we van elke school een warme plek waar kinderen
+        en personeelsleden hun talenten kunnen ontplooien.
+      </p>
+    </div>
   </div>
 </section>
 
